@@ -56,6 +56,7 @@ We used a modified version of the [Extended Groove MIDI Dataset](https://magenta
 
 YODO was trained with isolated drum tracks, which were produced with an electric drumkit and have no audio processing (reverb, equalization, compression, etc).
 As most recorded music has some degree of post-processing applied, YODO's performance is very likely to suffer from it.
+
 We have personally found that the snare is specially affected by this, since it's very common to add reverb to it in the mixing process, which muddies the final transcription.
 
 Another important factor is the quality of the drum isolation process, which is handled by the [Demucs music source separator.](https://github.com/facebookresearch/demucs)
@@ -74,4 +75,7 @@ Our work would have been impossible without the help of many people. Therefore, 
 - Callender et. al for providing the [Extended Groove MIDI Dataset](https://magenta.tensorflow.org/datasets/e-gmd), which allowed us to train our model.
 - Moca et. al for developing the [Superlet transform](https://www.nature.com/articles/s41467-020-20539-9), which allowed us to create better spectrograms.
 - Defossez et. al for creating the [Demucs music source separator](https://github.com/facebookresearch/demucs), which allowed us to isolate drum tracks.
-- [NLHPC](https://www.nlhpc.cl) for providing the necessary computational resources to train our system in a sensible amount of time.
+- [NLHPC](https://www.nlhpc.cl) for providing the necessary computational resources to train our system.
+
+## License
+YODO is released under the MIT license as found in the [LICENSE](https://github.com/varsaav/yodo/LICENSE) file.
