@@ -46,7 +46,7 @@ We have published our system as a Colab notebook, which uses Google's infrastruc
 
 [You can find the Colab notebook here](https://colab.research.google.com/drive/1mizpQMFhZUfrBOC5okmJ_1b81Ota6001?usp=sharing).
 
-## What dataset did you use?
+## How did you train your model?
 
 We used a modified version of the [Extended Groove MIDI Dataset](https://magenta.tensorflow.org/datasets/e-gmd). Since we needed to transform each audio into an image, we used the [Superlet transform](https://www.nature.com/articles/s41467-020-20539-9) to generate a spectrogram for every entry in E-GMD. After that, we split these into 1024x128 images, using right padding when necessary. The resulting dataset consists of 199 236 spectrograms, each with a corresponding text file which contains the labels used to train our YOLO model.
 
