@@ -59,14 +59,6 @@ As most recorded music has some degree of post-processing applied, YODO's perfor
 
 We have personally found that the snare is specially affected by this, since it's very common to add reverb to it in the mixing process, which muddies the final transcription.
 
-Another important factor is the quality of the drum isolation process, which is handled by the [Demucs music source separator.](https://github.com/facebookresearch/demucs)
-If Demucs improves, YODO's performance should improve as well (at least in theory).
-
-In other words, YODO will work best with:
-
-- Isolated drum tracks
-- No post-processing effects applied
-
 ## Special thanks
 
 Our work would have been impossible without the help of many people. Therefore, we give special thanks to:
