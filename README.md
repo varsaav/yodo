@@ -55,7 +55,7 @@ We used a modified version of the [Extended Groove MIDI Dataset](https://magenta
 ## Known issues
 
 YODO was trained with isolated drum tracks, which were produced with an electric drumkit and have no audio processing (reverb, equalization, compression, etc).
-As most recorded music has some degree of post-processing applied, YODO's performance is very likely to suffer from it.
+As most recorded music has some degree of post-processing applied, YODO's performance will likely suffer from it.
 
 We have personally found that the snare is specially affected by this, since it's very common to add reverb to it in the mixing process, which muddies the final transcription.
 
