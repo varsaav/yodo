@@ -32,9 +32,9 @@ YODO can detect up to 11 types of sounds, all produced by conventional drumkits:
 
 That said, additional percussion instruments might be detected by the system. For example, a shaker or a maraca might be mistakenly detected as a closed hi-hat, as these instruments produce similar enough sounds. However, these is more a reflection of the system's imperfections rather than a deliberate feature.
 
-## Is this any good?
+## How accurate is it?
 
-YODO is certainly not a perfect system, however, it has shown better results than previous ADT methods. If we merge some of our 11 classes into a more general 7-class system, we can compare YODO to the systems made by [Callender et. al](https://arxiv.org/abs/2004.00188) and [Vogl et. al](https://arxiv.org/abs/1806.06676):
+YODO has shown better results than previous ADT methods. If we merge some of our 11 classes into a more general 7-class system, we can compare YODO to the systems made by [Callender et. al](https://arxiv.org/abs/2004.00188) and [Vogl et. al](https://arxiv.org/abs/1806.06676):
 
 <img src="docs/F-score.png" width="500">
 
@@ -54,10 +54,12 @@ We used a modified version of the [Extended Groove MIDI Dataset](https://magenta
 
 ## Known issues
 
-YODO was trained with isolated drum tracks, which were produced with an electric drumkit and have no post-processing effects (reverb, equalization, compression, etc).
-Because of this, YODO's performance will be affected by the quality of drum isolation provided by Demucs and the degree of post-processing applied.
-
+YODO was trained with isolated drum tracks, which were produced with an electric drumkit and have no audio processing (reverb, equalization, compression, etc).
+As most recorded music has some degree of post-processing applied, YODO's performance is very likely to suffer from it.
 We have personally found that the snare is specially affected by this, since it's very common to add reverb to it in the mixing process, which muddies the final transcription.
+
+Another important factor is the quality of the drum isolation process, which is handled by the [Demucs music source separator.](https://github.com/facebookresearch/demucs)
+If Demucs improves, YODO's performance should improve as well (at least in theory).
 
 In other words, YODO will work best with:
 
