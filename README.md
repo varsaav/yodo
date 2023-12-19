@@ -78,4 +78,4 @@ Our work would have been impossible without the help of many people. Therefore, 
 - [NLHPC](https://www.nlhpc.cl) for providing the necessary computational resources to train our system.
 
 ## License
-YODO is released under the MIT license as found in the [LICENSE](https://github.com/varsaav/yodo/LICENSE) file.
+YODO is released under the MIT license as found in the [LICENSE](LICENSE) file.
