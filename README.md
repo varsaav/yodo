@@ -2,6 +2,12 @@
 
 YODO is an Automatic Drum Transcription (ADT) system, designed to transform audio recordings of drums into musical notation, specifically as a MIDI file.
 
+## How do I use it?
+
+We have published our system as a Colab notebook, which uses Google's infrastructure to make the necessary computations. This way, you don't need a powerful computer to be able to use YODO.
+
+[You can find the Colab notebook here](https://colab.research.google.com/drive/1mizpQMFhZUfrBOC5okmJ_1b81Ota6001?usp=sharing).
+
 ## How does it work?
 
 YODO uses Convolutional Neural Networks (CNN), a Deep Learning technique which specializes in learning from images. More specifically, we trained the YOLOv4 object detector to detect and classify different sounds produced by drums. Since YOLOv4 needs images as an input, we first transform the audio data into spectrograms (time-frequency plots) which are then fed to the neural network.
@@ -39,12 +45,6 @@ YODO has shown better results than previous ADT methods. If we merge some of our
 <img src="docs/F-score.png" width="500">
 
 As you can see, YODO outperforms both systems for almost every instrument, toms being the only exception. For more detailed info on YODO's performance, you can read [our paper](TO-BE-ADDED).
-
-## How do I use it?
-
-We have published our system as a Colab notebook, which uses Google's infrastructure to make the necessary computations. This way, you don't need a powerful computer to be able to use YODO.
-
-[You can find the Colab notebook here](https://colab.research.google.com/drive/1mizpQMFhZUfrBOC5okmJ_1b81Ota6001?usp=sharing).
 
 ## How did you train your model?
 
